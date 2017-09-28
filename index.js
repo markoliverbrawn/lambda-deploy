@@ -1,4 +1,9 @@
+var time = require('time');
 exports.handler = (event, context, callback) => {
-    // TODO implement
-    callback(null, 'Goodbye from Lambda');
+    var currentTime = new time.Date();
+    currentTime.setTimezone("America/Los_Angeles");
+    callback(null, {
+        statusCode: '200',
+        body: 'The time in Los Angeles SQUIRREL is: ' + currentTime.toString(),
+    });
 };
