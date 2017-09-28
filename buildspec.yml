@@ -10,3 +10,5 @@ artifacts:
   type: zip
   files:
     - NewSamTemplate.yaml
+    - index.js
+    - template.json
