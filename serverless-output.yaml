@@ -1,0 +1,14 @@
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  TestFunction:
+    Properties:
+      CodeUri: s3://test-code-deploy-mob/Test3.zip
+      Description: ''
+      Handler: index.handler
+      MemorySize: 128
+      Role: arn:aws:iam::237676459664:role/service-role/TestingCodeDeployRole
+      Runtime: nodejs6.10
+      Timeout: 3
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
+AWSTemplateFormatVersion: '2010-09-09'
