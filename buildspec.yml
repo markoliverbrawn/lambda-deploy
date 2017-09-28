@@ -3,6 +3,8 @@ version: 0.1
 phases:
   install:
     commands:
+      - echo Installing Mocha...
+      - npm install -g mocha
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket test-code-deploy-mob --output-template-file NewSamTemplate.yaml
 artifacts:
   type: zip
