@@ -3,7 +3,7 @@ Description: Outputs the time
 Resources:
   TestFunction:
     Properties:
-      CodeUri: s3://test-code-deploy-mob/d8aa65fba05d89b62712f0fd2a3d98bb
+      CodeUri: ./
       Description: ''
       Handler: index.handler
       MemorySize: 128
