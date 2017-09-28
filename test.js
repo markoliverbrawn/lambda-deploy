@@ -1,8 +1,6 @@
-var test = require('unit.js');
-var str = 'Squirrel, world!';
+var chai = require('chai').expect;
+var str = 'Squirrel!';
 
-test.string(str).startsWith('Squirrel');
-
-if (test.string(str).startsWith('Squirrel')) {
-  console.log('Passed');
-}
+it('Should say Squirrel', function(){
+	EXPECT(str).to.equal('Squirrel');
+});

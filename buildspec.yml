@@ -9,7 +9,7 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - npm install unit.js
+      - npm install chai
   build:
     commands:
       - echo Build started on `date`
