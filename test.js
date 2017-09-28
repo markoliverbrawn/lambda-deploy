@@ -1,4 +1,4 @@
-var chai = require('chai').expect;
+var EXPECT = require('chai').expect;
 var str = 'Squirrel!';
 
 it('Should say Squirrel', function(){
