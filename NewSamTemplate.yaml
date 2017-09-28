@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Outputs the time
+Resources:
+  TestFunction:
+    Properties:
+      CodeUri: s3://test-code-deploy-mob/d8aa65fba05d89b62712f0fd2a3d98bb
+      Description: ''
+      Handler: index.handler
+      MemorySize: 128
+      Role: arn:aws:iam::237676459664:role/service-role/TestingCodeDeployRole
+      Runtime: nodejs6.10
+      Timeout: 3
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
