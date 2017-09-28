@@ -22,4 +22,5 @@ artifacts:
   type: zip
   files:
     - index.js
+    - NewSamTemplate.yaml
     - test.js
